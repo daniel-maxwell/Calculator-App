@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+body h1 {
+    text-align: center;
+}
+
+.calculator {
+    margin: auto;
+    padding-top: 20px;
+    background: black;
+    border-radius: 5%;
+    max-width: 395px;
+}
+
+#memory-up {
+    margin: 5px;
+    padding-left: 30px;
+    font-size: medium;
+    color: white;
+}
+
+.display {
+    font-size: 90px;
+    font-size-adjust: none;
+    color: white;
+    text-align: end;
+    padding-right: 30px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.calculator-buttons {
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template: repeat(6, 1fr) / repeat(4, 1fr);
+
+}
+
+.calc-button {
+    position: relative;
+    background-color: #333;
+    border-radius: 50%;
+    border: none;
+    height: 85px;
+    width: 85px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+
+
+}
+
+.isZeroBtn {
+    grid-column: span 2;
+    width: 180px;
+    border-radius: 55px;
+}
+
+.isOperator {
+    background: #f1a33c;
+}
+
+.isMemory {
+    background: lightseagreen;
+}
+
+.isClearBtn {
+    background: #a5a5a5;
+    color: black;
+}
+
+.calc-button:hover {
+    filter: brightness(120%);
+    transition: 0.3s;
+}
