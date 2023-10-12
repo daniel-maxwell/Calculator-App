@@ -88,13 +88,13 @@ function calculate(previousNumber, newNumber, operand) {
         case '+':
             updateDisplay(parseFloat(Number(previousNumber) + Number(newNumber)).toFixed(3));
             break;
-        case '-':
+        case '−':
             updateDisplay(parseFloat(Number(previousNumber) - Number(newNumber)).toFixed(3));
             break;
         case '÷':
             updateDisplay(parseFloat(Number(previousNumber) / Number(newNumber)).toFixed(3));
             break;
-        case 'x':
+        case '×':
             updateDisplay(parseFloat(Number(previousNumber) * Number(newNumber)).toFixed(3));
             break;
     }
@@ -115,7 +115,7 @@ function memorize(data) {
                 operand = "";
             }
             break;
-        case 'M-':
+        case 'M−':
             if (display.innerText !== '0') {
                 memoryActivated.innerHTML = 'M';
                 calculate(previousNumber, display.innerText, operand);
